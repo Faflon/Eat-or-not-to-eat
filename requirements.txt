@@ -1,0 +1,9 @@
+pandas
+numpy
+matplotlib
+seaborn
+mlxtend
+ucimlrepo
+scipy
+jupyter
+ipykernel
