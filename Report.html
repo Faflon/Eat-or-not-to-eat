@@ -7831,7 +7831,7 @@ Data ready for analysis. Shape: (8124, 22)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The dataset is remarkably well-balanced, with a near-even split between <strong>edible</strong> and <strong>poisonous</strong> samples. There is no need to apply resampling techniques (like oversampling). Standard support thresholds should be sufficient to capture rules for both classes effectively.</p>
+<p>The dataset is remarkably well-balanced, with a near-even split between <strong>edible</strong> and <strong>poisonous</strong> samples.</p>
 <p>Strong odor is often associated with non-edibility of the mushroom. While visual features can be deceptive, distinct smells (like almond, anise, or foul odors) are often strongly correlated with specific chemical compounds. Visualization of the distribution of the <code>odor</code> feature is shown below to see which scent profiles are most common in the dataset:</p>
 </div>
 </div>
@@ -7907,7 +7907,7 @@ Data ready for analysis. Shape: (8124, 22)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The correlation between categories is checked too. This step serves two purposes: identifying features that are strongly associated with the target <code>class (poisonous)</code> (potential best predictors) and detecting features that are strongly correlated with each other.</p>
+<p>The correlation between categories is checked too. This step serves two purposes: identifying features that are strongly associated with the target class <code>poisonous</code> (potential best predictors) and detecting features that are strongly correlated with each other.</p>
 </div>
 </div>
 </div>
@@ -7944,7 +7944,7 @@ Data ready for analysis. Shape: (8124, 22)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The heatmap reveals pockets of high correlation between certain structural features. High values between features (e.g., <code>gill-attachment</code> and <code>veil-color</code>) suggest that some physical characteristics biologically co-occur. While this indicates redundancy, they are retain later in the analysis. There are also several features that show a moderate-to-strong association with the <code>class (poisonous)</code> column, confirming that toxicity is not necessarily random but can be structurally determined.</p>
+<p>The heatmap reveals pockets of high correlation between certain structural features. High values between features (e.g., <code>gill-attachment</code> and <code>veil-color</code>) suggest that some physical characteristics biologically co-occur. While this indicates redundancy, they are retain later in the analysis. There are also several features that show a moderate-to-strong association with the <code>poisonous</code> column, confirming that toxicity is not necessarily random but can be structurally determined.</p>
 </div>
 </div>
 </div>
@@ -9020,17 +9020,6 @@ Examples of 'Safe Rules':
 <li><strong>Step 2 (The Visual Check):</strong> If the mushroom has green spore prints or buff (yellowish-beige) gills $\rightarrow$ <strong>DISCARD</strong>.</li>
 <li><strong>Step 3 (The Safety Confirmation):</strong> Only consider consumption if positive indicators (e.g., almond/anise scent or gray stalk color) are present.</li>
 </ol>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=51eb9f85">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="References">References<a class="anchor-link" href="#References">¶</a></h2><p>Mushroom [Dataset]. (1981). UCI Machine Learning Repository. <a href="https://doi.org/10.24432/C5959T">https://doi.org/10.24432/C5959T</a>.</p>
 </div>
 </div>
 </div>
